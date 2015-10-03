@@ -10,8 +10,8 @@
 		<div class="row well">
 			<h3><%= @contact.name %> left a message for Palmetto Studio</h3>
 			<h4>His details are:</h4>
-			<p><strong>Email address:</strong> <%= @contact.email%></p>
-			<p><strong>Phone number:</strong> <%= @contact.phone%></p>
+			<p><strong>Email address:</strong> <%= mail_to(@contact.email)%></p>
+			<p><strong>Phone number:</strong> <%= tel_to(@contact.phone)%></p>
 			<h4>His message reads....</h4>
 			<p><%= @contact.body%></p>
 			<p class="pull-right"><%= link_to "Back to All Contacts", contacts_path, class:"btn btn-xs btn-success" %> |
