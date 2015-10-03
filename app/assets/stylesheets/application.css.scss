@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require font-awesome
+ *= require_self
+ */
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "normalize";
+
+
+.post-container{
+	margin-right: 2em;
+}
+.form-post{
+	width: 60%;
+	margin: 1.5em auto;
+	background-color:#e4e4c4 !important;
+	padding: 1.5em;
+	border-radius: 1em;
+	h2{
+		text-align: center;
+	}
+}
+
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+.details ul{
+	list-style:none;
+	margin-top: 3.5em;
+	li {
+		text-align: left;
+		font-size: 1.25em;
+		padding: .5em;
+		i, img{
+			color:red;
+			padding-right: .5em;
+		}
+	}
+
+}
+
+
+@media screen and (max-width:768px){
+
+/*	form{
+		width: 100%;
+		position:relative;
+		margin: 0 auto;
+		background-color:#e4e4c4 !important;
+		padding: .5em;
+		border-radius: .5em;
+		h3{
+			font-size:1.25em;
+		}
+	}
+*/		.form-post{
+		width: 95%;
+		margin: .25em auto;
+		background-color:#e4e4c4 !important;
+		padding: 1.5em;
+		border-radius: 1em;
+		h2{
+			text-align: center;
+		}
+    }
+	.form-block{
+		width:100%;
+	}
+
+	.details ul{
+		list-style:none;
+		margin-top: 3em;
+			li {
+				text-align: left;
+				font-size: 1em;
+				padding: .5em;
+			}
+		}
+
+	#comment>form{
+		width:95%;
+		background-color: white;
+	}
+}

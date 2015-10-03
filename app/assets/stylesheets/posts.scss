@@ -1,0 +1,73 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+i.contact{
+	color:green;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.action-clear{
+	clear:both;
+	margin-top:1em;
+}
+
+p.post-body{
+	float:left;
+	padding-right:.5em;
+}
+
+img.img-show{
+/*	width: 40%;*/
+	border-radius: 1em;
+	float:left;
+	padding-left:.5em;
+	margin:0 auto;
+}
+.post-border {
+	margin-top: 1.5em;
+	background-color: #F2F2E4 !important;
+	border-radius: 1em !important;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding:2em;
+	clear:both;
+	p, h1, h2{
+	padding-left: .25em;
+	padding-right: .25em;
+	}
+}
+
+.clear{
+	clear:both;
+	margin-top:1em;
+}
+
+.error-message>h4{
+	color:red !important;
+}
+
+
+@media screen and (max-width:768px){
+
+	.post-header h1{
+		font-size: 1.5em;
+		padding-left:2em;
+		font-family:Raleway, sans-serif;
+	}
+
+	img.img-show{
+		width:90%;
+		border-radius:1em;
+		margin-right:1.5em;
+	}
+
+	.post-content p{
+		margin-top:1em;
+		clear:both;
+	}
+}

@@ -1,0 +1,21 @@
+<%= provide(:title, "Contact")%>
+	<div class="form-block">
+		<h3 class="pull-right">Leave a message for <%=image_tag("PalmettoLogo.png", alt:"Palmetto Studios",class:"brand-image ") %></h3>
+		<div class="col-md-6 col-xs-12 contact-details">
+				<br/>
+				<h3>Our Contact Details</h3>
+				<ul>
+					<li class="contact"><i class="fa fa-home"></i> 2 Greenwoods Ave, San Andres Pob., Cainta, Philippines </li>
+					<li class="contact"><i class="fa fa-phone"></i> <a href="tel:0011632-500-0222">0011632-500-0222 </li>
+					<li class="contact"><i class="glyphicon glyphicon-phone"></i> <a href="tel:+63 917 874 1222">+63 917 874 1222 </li>
+					<li class="contact"><i class="glyphicon glyphicon-envelope"></i><a href="mailto:palmetto@gmail.com"> palmetto@gmail.com</a></li>	
+					<li class="contact"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/PalmettoStudios">Follow us on Facebook!</a></li>		
+					<li class="contact"><i class="fa fa-clock-o"></i> 12PM-9PM Mon-Sat | 2PM-6PM Sun </li>
+				</ul>
+		</div>
+		<div class="col-md-6 col-xs-12">
+			<%= render "contacts/form" %>
+		</div>
+	</div>
+
+

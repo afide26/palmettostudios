@@ -1,0 +1,24 @@
+<%= provide(:title, "Contact details")%>
+<div class="row">
+	<div class="col-xs-12">
+		<h2>All Contacts <div id="home-image"><%=image_tag("PalmettoLogo.png", alt:"Palmetto Studios", class:"brand-image pull-right") %></span></h2>
+		<%= link_to "All Contacts", contacts_path, class:"btn btn-default" %>
+	</div>
+	
+	<div class="col-xs-12">
+		<br/>
+		<div class="row well">
+			<h3><%= @contact.name %> left a message for Palmetto Studio</h3>
+			<h4>His details are:</h4>
+			<p><strong>Email address:</strong> <%= @contact.email%></p>
+			<p><strong>Phone number:</strong> <%= @contact.phone%></p>
+			<h4>His message reads....</h4>
+			<p><%= @contact.body%></p>
+			<p class="pull-right"><%= link_to "Back to All Contacts", contacts_path, class:"btn btn-xs btn-success" %> |
+			<%= link_to "Delete", contact_path(@contact), method: :delete,
+									  data: { confirm:"Are you sure?" }, class:"btn btn-xs btn-danger"%></p>     
+		</div>
+ 
+	</div>
+</div>
+

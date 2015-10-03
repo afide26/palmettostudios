@@ -1,0 +1,63 @@
+<%= provide(:title, "Home")%>
+<%= render "layouts/flash" %>
+<div class="row" id="gallery">
+	<div class="col-xs-12">
+		<h2 class="text-center">Welcome to <%=image_tag("PalmettoLogo.png", alt:"Palmetto Studios",class:"brand-image") %></h2>
+	</div>
+	<div class="col-xs-12">
+	 	<h4 class="text-center">Where coverage of events come to life as photographed by Arturo Fidelino and his professional team.</h4>
+			<div class="carousel slide" id="my-carousel" data-ride="carousel">
+			  	<ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				    <li data-target="#myCarousel" data-slide-to="3"></li>
+				    <li data-target="#myCarousel" data-slide-to="4"></li>
+				    <li data-target="#myCarousel" data-slide-to="5"></li>
+				    <li data-target="#myCarousel" data-slide-to="6"></li>	
+				    <li data-target="#myCarousel" data-slide-to="7"></li>
+				    <li data-target="#myCarousel" data-slide-to="8"></li>	    
+			  	</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<%= image_tag "1.jpg", :class=>"img img-responsive contact-logo" %>
+						<div class="carousel-caption"><h4>Family Portraits</h4></div>
+					</div>
+					<div class="item">
+						<%= image_tag "3.jpg", :class=>"img img-responsive contact-logo" %>
+						<div class="carousel-caption"><h4>Family Portraits</h4></div>
+					</div>
+					<div class="item">
+						<%= image_tag "2.jpg", :class=>"img img-responsive contact-logo" %>
+						<div class="carousel-caption"><h4>Group Portraits</h4></div>
+					</div>
+
+					<div class="item">
+						<%= image_tag "4.jpg", :class=>"img img-responsive contact-logo" %>
+						<div class="carousel-caption"><h4>Timeless Romance</h4></div>
+					</div>
+					<div class="item">
+						<%= image_tag "5.jpg", :class=>"img img-responsive contact-logo" %>
+						<div class="carousel-caption"><h4>Sir Chief and avid fan</h4></div>
+					</div>
+					<div class="item">
+						<%= image_tag "6.jpg", :class=>"img img-responsive contact-logo" %>
+						<div class="carousel-caption"><h4>Baby portraits</h4></div>
+					</div>
+					<div class="item">
+						<%= image_tag "8.jpg", :class=>"img img-responsive contact-logo" %>
+						<div class="carousel-caption"><h4>Group Photos</h4></div>
+					</div>
+				</div>
+				<a href="#my-carousel" class="carousel-control left" data-slide="prev"><h2><i class="glyphicon glyphicon-chevron-left"></i></a>
+				<a href="#my-carousel" class="carousel-control right next" data-slide="next"><h2><i class="glyphicon glyphicon-chevron-right"></i></h2></a>		
+			</div>	
+	</div>
+</div>
+<hr>
+<br/>
+<div id="about">
+	<h2 class="text-center">Our Services</h2>
+		<%=render "albums/services" %>
+</div>
+<%= link_to "Back to Top", "#gallery", class:"btn btn-block btn-default" %>

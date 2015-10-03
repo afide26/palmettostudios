@@ -1,0 +1,35 @@
+// Place all the styles related to the Contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.form-block{
+	margin: 3em auto !important;
+	background-color: #F2F2E4;
+	padding-left: 2em;
+	padding-right: 1em;
+	border-radius: 1em;
+	width: 100%;
+}
+
+.contact-details{
+	padding-left: .2em !important;
+}
+.contact-details ul{
+	list-style: none;
+	li{
+	font-size: 1.2em;
+	}
+	li i{
+		color:red;
+		padding-right: 1em;
+		font-size: 1.2em;
+	}
+	li img{
+	padding-right: 1em;
+	}
+}
+
+.error-message li h4{
+	color:red !important;
+}

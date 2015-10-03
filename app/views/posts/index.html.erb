@@ -1,0 +1,25 @@
+<%= provide(:title, "All Posts")%>
+<%= render 'layouts/flash' %>
+<div class="container">
+	<div class="post-row">
+		<h1 class="post-header">My Thoughts About <span><i class="fa fa-camera-retro"></i></span></h1>
+		<p><small><%= link_to "New Post", new_post_path, class:"btn btn-default btn-xs" %></small></p>
+	</div>
+	<div class='post-row'>
+		<% @posts.each do |post| %>
+			<div class="col-md-7 col-xs-12">
+				<h2><%= link_to post.title, post_path(post) %></h2><br/>	
+				<p>Created on <%= post.created_at.strftime("%B, %d, %Y") %></p>
+				<hr>
+			    <p><%= truncate(post.body, length: 220, separator: '') %></p>	
+			    <p><%= link_to "Read Full Post", post_path(post), class:"pull-right btn btn-xs btn-link" %></p>	
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<%= image_tag post.image.url(:medium), class:"pull-right img-show"%>
+			</div>
+		<% end %>	
+	</div>
+</div>
+
+
+

@@ -1,0 +1,29 @@
+<%= form_for(@contact) do |f| %>
+ <h3>Enter your details here:</h3>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h4><%= pluralize(@contact.errors.count, "error") %> prohibited this message from being saved:</h4>
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li class:"error-message"><h4><%= message %></h4></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="form-group">
+    <%= f.text_field :name, autofocus: true, class:"form-control", placeholder:"Enter your full name here..." %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :email, class:"form-control", placeholder:"Enter your email address" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :phone, class:"form-control", placeholder:"Enter your landline or mobile number"%>
+  </div>
+  <div class="form-group">
+    <%= f.text_area :body, class:"form-control", row: 9, placeholder:"Type your message for Palmetto Studios here..." %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Send Message",  class:'btn btn-info btn-block' %>
+  </div>
+  <br>
+<% end %>

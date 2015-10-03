@@ -1,0 +1,25 @@
+// Place all the styles related to the Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+.comments>form{
+	background-color:0 !important;
+	margin-top:2em;
+}
+
+#comment>form{
+	width:75%;
+}
+#new-comment{
+	margin: 1em auto;
+}
+
+@media screen and (max-width: 768px){
+	#new-comment{
+		width: 99%;
+		margin: 1em auto;
+	}
+}
