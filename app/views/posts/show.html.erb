@@ -3,7 +3,6 @@
 	<br>
 	<%= render 'layouts/flash' %>
 	<div class="col-md-12 col-xs-12">
-		<h2><%= @post.title%></h2>
         <%= render 'layouts/flash' %>
 		<p class="text-right"><%= link_to "Back to Posts", posts_path %> | Posted <%= time_ago_in_words(@post.created_at)%> Ago</p>
 		<p class="post-content"><%= simple_format(@post.body) %></p>	
