@@ -1,5 +1,5 @@
 <%= form_for(@contact) do |f| %>
- <h3>Enter your details here:</h3>
+ <h4>Enter your details here:</h4>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
       <h4><%= pluralize(@contact.errors.count, "error") %> prohibited this message from being saved:</h4>
