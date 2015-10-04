@@ -12,7 +12,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
              <li><%= link_to " Welcome", root_path %></li>
-             <li><%= link_to " Services", "root_path:about" %></li>
+             <li><%= link_to " Services", root_path(@root, :anchor=>"about") %></li>
              <!-- <li><%= link_to " Clients", "#"%></li> -->
              <li><%= link_to "Photography Tips", posts_path %></li>
 
