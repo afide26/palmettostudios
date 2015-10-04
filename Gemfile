@@ -5,6 +5,7 @@ gem 'rails',        '4.2.2'
 gem 'bcrypt', 		'3.1.7'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem "font-awesome-rails"
+gem "devise"
 gem 'sass-rails', '>= 3.2'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'uglifier',     '2.5.3'
