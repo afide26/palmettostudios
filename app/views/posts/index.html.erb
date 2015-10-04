@@ -3,7 +3,10 @@
 <div class="container">
 	<div class="post-row">
 		<h1 class="post-header">My Thoughts About <span><i class="fa fa-camera-retro"></i></span></h1>
+		<% if !user_signed_in? %>
+		<% elsif !current_user.admin? %>
 		<p><small><%= link_to "New Post", new_post_path, class:"btn btn-default btn-xs" %></small></p>
+		<% end %>
 	</div>
 	<div class='post-row'>
 		<% @posts.each do |post| %>
