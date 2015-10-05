@@ -18,8 +18,8 @@
 		<%= f.text_area :body, rows:20, class:"form-control"%><br>
 	</div>
 	<div class="form-group">
-	    <%= f.label :image %>
-		<%= f.file_field :image, class:"form-control" %>
+	    <%= f.label "Picture name" %>
+		<%= f.text_field :picture, class:"form-control" %>
 	</div>
 	<div class="actions">
 		<%= f.submit class:"btn btn-info btn-block" %>

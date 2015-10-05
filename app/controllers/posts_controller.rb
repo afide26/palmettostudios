@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 	def create
 		@post = Post.new(post_params)
 		if @post.save
-			respond_with(@post)
+			redirect_to @post
 			flash[:notice] = "New Post created."
 		else
 			render 'new'
