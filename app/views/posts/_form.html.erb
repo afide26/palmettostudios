@@ -18,10 +18,20 @@
 		<%= f.text_area :body, rows:20, class:"form-control"%><br>
 	</div>
 	<div class="form-group">
-	    <%= f.label "Picture name" %>
-		<%= f.text_field :picture, class:"form-control" %>
+	    <%= f.label "Upload Picture" %>
+		<%= f.file_field :photo, accept: 'image/jpeg, image/gif, image/png', class:"form-control" %>
 	</div>
 	<div class="actions">
 		<%= f.submit class:"btn btn-info btn-block" %>
 	</div>
 <% end %>
+
+<script type="text/javascript">
+	$(#post_photo).bind('change', function(){
+		size_in_megabytes = this.files[0].size/1024/1024;
+
+		if (size_in_megabytes >5){
+			alert('Maximum file size is 5MB. Please choose a smaller file');
+		}
+	});
+</script>

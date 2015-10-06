@@ -26,7 +26,7 @@ img.img-show{
 	border-radius: 1em;
 	float:left;
 	padding-left:.5em;
-	margin:0 auto;
+	margin:1em auto;
 }
 .post-border {
 	margin-top: 1.5em;
@@ -54,7 +54,7 @@ img.img-show{
 
 @media screen and (max-width:768px){
 
-	.post-header h1{
+	.post-header h1,h3{
 		font-size: 1.5em;
 		padding-left:2em;
 		font-family:Raleway, sans-serif;

@@ -15,7 +15,9 @@ gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 gem 'aws-sdk',      '~> 2.1.23'
-gem 'social-share-button'    
+gem 'social-share-button'  
+gem 'carrierwave'
+gem 'mini_magick'  
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
