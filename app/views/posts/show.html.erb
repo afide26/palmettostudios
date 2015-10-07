@@ -6,6 +6,7 @@
         <h2><%= @post.title %> <%= social_share_button_tag(@post.title)%></h2>
 		<p class="text-right"><%= link_to "Back to Posts", posts_path %> | Posted <%= time_ago_in_words(@post.created_at)%> Ago</p>
 		<p class="post-content"><%= simple_format(@post.body) %></p>	
+		<%= link_to '<i class="glyphicon glyphicon-envelope contact"></i> Contact Us'.html_safe, new_contact_path %>
 		<hr>
 		<div class:"post-body">
 		<p><%= image_tag(@post.image.url(:large), class:"img-show pull-right")%></p>	
