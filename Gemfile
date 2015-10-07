@@ -9,6 +9,7 @@ gem "devise"
 gem 'sass-rails', '>= 3.2'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
+gem "figaro"
 gem 'uglifier',     '2.5.3'
 gem 'coffee-rails', '4.1.0'
 gem 'jquery-rails', '4.0.3'

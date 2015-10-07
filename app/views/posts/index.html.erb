@@ -10,14 +10,14 @@
 	</div>
 	<div class='post-row'>
 		<% @posts.each do |post| %>
-			<div class="col-md-7 col-xs-12">
+			<div class="col-md-8 col-xs-12">
 				<h2><%= link_to post.title, post_path(post) %></h2><br/>	
 				<p>Created on <%= post.created_at.strftime("%B, %d, %Y") %></p>
 				<hr>
 			    <p><%= truncate(post.body, length: 220, separator: '') %></p>	
 			    <p><%= link_to "Read Full Post", post_path(post), class:"pull-right btn btn-xs btn-link" %></p>	
 			</div>
-			<div class="col-md-5 col-xs-12">
+			<div class="col-md-4 col-xs-12">
 				<%= image_tag(post.image.url(:medium), class:"pull-right img-show") if post.image? %>
 			</div>
 		<% end %>	
