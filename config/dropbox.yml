@@ -1,6 +1,6 @@
 app_key: "ehwjkgc2pycaptk"
-app_secret:<%=ENV["APP_SECRET"]%>
+app_secret: <%= ENV["APP_SECRET"] %>
 access_token: "shi403p2mhilsxes"
-access_token_secret:<%=ENV["APP_TOKEN_SECRET"]%>
+access_token_secret: <%= ENV["ACCESS_TOKEN_SECRET"] %>
 user_id: "161988086"
 access_type: "app_folder"
