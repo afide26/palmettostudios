@@ -9,7 +9,7 @@
 		<%= link_to '<i class="glyphicon glyphicon-envelope contact"></i> Contact Us'.html_safe, new_contact_path %>
 		<hr>
 		<div class:"post-body">
-		<p><%= image_tag(@post.image.url(:large), class:"img-show pull-right")%></p>	
+		<p><%= image_tag(@post.image.url(:large), class:"img-show pull-right") if @post.image? %></p>	
 		</div>
 		<% if !user_signed_in? %>
 		<% elsif current_user.admin? %>
