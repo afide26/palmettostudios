@@ -9,6 +9,7 @@ gem "devise"
 gem 'sass-rails', '>= 3.2'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
+gem 'rmagick', '~> 2.15.4'
 gem "figaro"
 gem 'uglifier',     '2.5.3'
 gem 'coffee-rails', '4.1.0'
@@ -17,7 +18,7 @@ gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 gem 'social-share-button'  
-
+gem 'will_paginate-bootstrap'
 
  
 
