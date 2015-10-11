@@ -4,7 +4,7 @@
 	<div class="post-row">
 		<h1 class="post-header">My Thoughts About <span><i class="fa fa-camera-retro"></i></span></h1>
 		<div class="pagination pull-right">
-			<%= will_paginate @collection, renderer: BootstrapPagination::Rails, :previous_label => "&laquo; New Posts", :next_label =>"Old Posts, &raquo;" %>
+			<%= will_paginate @collection, renderer: BootstrapPagination::Rails, :previous_label => "&laquo; New Posts", :next_label =>"Old Posts &raquo;" %>
 		</div>
 		<% if !user_signed_in? %>
 		<% elsif current_user.admin? %>
