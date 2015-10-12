@@ -13,6 +13,9 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
+.divider{
+	height: 1em;
+}
 .post-border {
 	margin-top: 2em;
 	background-color: #F2F2E4 !important;
@@ -47,6 +50,7 @@ hr{
 	background-color: #F2F2E4 !important;
 	p{
 		padding-top:1em;
+		margin-bottom: 1em;
 		text-align:center;
 	}
 }

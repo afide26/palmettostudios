@@ -1,14 +1,39 @@
 <div class="container">
+	<div class="divider"  id="about"></div>
 	<div class="row services">
-		<br>
+		<h2 class="text-center">Arturo 'Boyet' Fidelino </h2>
+		<h3 class="text-center">Owner/Chief Photographer</h3>
+		<div class="col-xs-12 col-md-6 service-description">
+			<div class="services-block" >
+				<br>
+				<div class="services-body">
+					<%= image_tag'boyet5.jpg',  class:'img img-responsive'%>
+				</div>
+				<br>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 service-description">
+			<h3>A Brief background about Boyet</h3>
+			<blockquote>
+				<p>Boyet has had 35 years of Corporate work first in the world of service and hospitality, having worked in Five-Star or De Luxe hotels such as Manila Hilton, EDSA Shangri-La and Manila Diamond. Boyet then shifted careers in sales and account management and decided to work for a major telecom company before deciding to pursue his first love, photography.</p>
+				<p>With his meticulous eye to detail and clarity, Boyet enjoy taking photos of street scenes to capture people's personal stories and feelings. Moreover, he wants to get the essence and mystery of the place where he is in thru kaleidoscope or monochromatic images.</p>
+				<p>When not in the studio, Boyet is an avid road biker and does not mind hand-carrying another 20 kilos of camera and equipment during their family trips.</p>
+				<p><%= link_to '<i class="glyphicon glyphicon-envelope contact"></i> Contact Boyet!'.html_safe, new_contact_path, class:"pull-right btn btn-default" %></p>
+			</blockquote>
+		</div>
+	</div>
+	<div class="divider"  id="portraits"></div>
+	<hr/>
+
+	<div class="row services">
 		<h2 class="text-center">Our Services</h2>
-		<div class="col-xs-12 col-md-6">
-			<div class="services-block">
+		<div class="col-xs-12 col-md-6 service-description">
+			<div class="services-block" >
 				<div class="service-summary">
-					<h3 style="font-family:Raleway, sans-serif">Photography by Palmetto</h3>
+					<h3 style="font-family:Raleway, sans-serif">Portrait Sessions</h3>
 				</div>
 				<div class="services-body">
-					<%= image_tag'photography.jpg',  class:'img img-responsive'%>
+					<%= image_tag'portrait.jpg',  class:'img img-responsive'%>
 				</div>
 				<div class="services-footer">
 					<h4><%= link_to '<span class="glyphicon glyphicon-chevron-right
@@ -17,32 +42,26 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-md-6 service-description">
-			<h3>Photography services</h3>
+			<h3>Get that professional edge</h3>
 			<blockquote>
-				Our team of professional photographers have keen eyes to capture 
-				splendid moments to behold.
-
-				<h4>Our expertise include:</h4>
-				<ul>
-					<li>Portrait Sessions</li>
-					<li>Wedding Coverage</li>
-					<li>Event Coverage</li>
-					<li>ID Photos</li>
-					<li>Framing Services</li>
-				</ul>
+				<p>A one-hour session with our photography expert using professional-quality lighting, backdrops and props. We offer unlimited shots on high resolution or RAW and your choice of digital or glare-free fabric and paper backdrops to complement your get-up.</p>
+				<p>Our expertise lies in preparing our subject prior to the shoot by giving wardrobe/color palette suggestions. During the shoot, our goal is to make you (baby, family, doggie) feel comfortable and relaxed while our photographers look for the right timing to come up with the most flattering shots.</p>
+				<br>
+				<br>
+				<p><%= link_to '<i class="glyphicon glyphicon-envelope contact"></i> Enquire Now!'.html_safe, new_contact_path, class:"pull-right btn btn-default" %></p>
 			</blockquote>
 		</div>
 	</div>
+	<div class="divider" id="weddings"></div>
 	<hr/>
 	<div class="row services">
-		<br>
-		<div class="col-xs-12 col-md-6">
-			<div class="services-block">
+		<div class="col-xs-12 col-md-6" >
+			<div class="services-block" >
 				<div class="service-summary">
-					<h3 style="font-family:Raleway, sans-serif">Videography</h3>
+					<h3 style="font-family:Raleway, sans-serif">Weddings</h3>
 				</div>
 				<div class="services-body">
-					<%= image_tag'video.jpg',  class:'img img-responsive'%>
+					<%= image_tag'weddings.jpg',  class:'img img-responsive'%>
 				</div>
 				<div class="services-footer">
 					<h4><%= link_to '<span class="glyphicon glyphicon-chevron-right
@@ -53,30 +72,25 @@
 		<div class="col-xs-12 col-md-6 service-description">
 			<h3>Capturing memories</h3>
 			<blockquote>
-				Our team of professional photographers have keen eyes to capture 
-				splendid moments to behold.
-
-				<h4>Our expertise include:</h4>
-				<ul>
-					<li>Portrait Sessions</li>
-					<li>Wedding Coverage</li>
-					<li>Event Coverage</li>
-					<li>ID Photos</li>
-					<li>Framing Services</li>
-				</ul>
+				<p>We believe that this day is all about you. Tell us about yourself, your bride/groom/partner. What makes you both happy? What makes him/her tick? What are your dreams?</p>
+				<p>We are happy to be there to discreetly capture those magical moments from prepping to the wedding ceremony to the reception and celebration party.</p>
+				<p>Yes, we will give you the usual required shots and poses but we will capture the faces and emotions of family and friends sharing their joy and happiness on your most important day.</p>
+				<br>
+				<br>
+				<p><%= link_to '<i class="glyphicon glyphicon-envelope contact"></i> Enquire Now!'.html_safe, new_contact_path, class:"pull-right btn btn-default" %></p>
 			</blockquote>
 		</div>
 	</div>
-	<hr>
-	<div class="row services">
-		<br>
+	<div class="divider" id="corporate"></div>
+	<hr/>
+	<div class="row services" >
 		<div class="col-xs-12 col-md-6">
-			<div class="services-block">
+			<div class="services-block" >
 				<div class="service-summary">
-					<h3 style="font-family:Raleway, sans-serif">Printing Services</h3>
+					<h3 style="font-family:Raleway, sans-serif">Corporate Events</h3>
 				</div>
 				<div class="services-body">
-					<%= image_tag'printing.jpg',  class:'img img-responsive'%>
+					<%= image_tag'corp11.jpg',  class:'img img-responsive'%>
 				</div>
 				<div class="services-footer">
 					<h4><%= link_to '<span class="glyphicon glyphicon-chevron-right
@@ -85,22 +99,45 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-md-6 service-description">
-			<h3>Capturing memories</h3>
+			<h3>Events</h3>
 			<blockquote>
-				Our team of professional photographers have keen eyes to capture 
-				splendid moments to behold.
-
-				<h4>Our expertise include:</h4>
-				<ul>
-					<li>Portrait Sessions</li>
-					<li>Wedding Coverage</li>
-					<li>Event Coverage</li>
-					<li>ID Photos</li>
-					<li>Framing Services</li>
-				</ul>
+				<p>Celebrating a company milestone? Launching a new product or service? Engaging the employees in a company event or outing? Our team of trained photographers, videographers and editors will provide documentation and editing services or whatever is necessary to make your event a success. </p>
+				<p>With our background as corporate citizens, we We encourage our client to meet with us prior to the event to ensure that all their requests are clarified met.</p>
+				<br>
+				<br>
+				<p><%= link_to '<i class="glyphicon glyphicon-envelope contact"></i> Enquire Now!'.html_safe, new_contact_path, class:"pull-right btn btn-default" %></p>
 			</blockquote>
 		</div>
 	</div>
+	<div class="divider" id="product"></div>
+	<hr/>
+	<div class="row services" >
+		<div class="col-xs-12 col-md-6">
+			<div class="services-block">
+				<div class="service-summary">
+					<h3 style="font-family:Raleway, sans-serif">Product Shoot</h3>
+				</div>
+				<div class="services-body">
+					<%= image_tag'product.jpg',  class:'img img-responsive'%>
+				</div>
+				<div class="services-footer">
+					<h4><%= link_to '<span class="glyphicon glyphicon-chevron-right
+	                pull-right"></span> Contact Us'.html_safe, new_contact_path %> </h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 service-description" >
+			<h3>Boost your sales through eye-catching imagery</h3>
+			<blockquote>
+				<p>Nothing represents your product more effectively than perfectly shot images. With our keen eyes for detail and experience in shooting various scenarios to give your products the captivating look, getting our services will surely help entice your target market to buy your products.</p>
+				<p>Be it print or digital, we are here to serve and help keep the sales pouring in!</p>
+				<br>
+				<br>
+				<p><%= link_to '<i class="glyphicon glyphicon-envelope contact"></i> Enquire Now!'.html_safe, new_contact_path, class:"pull-right btn btn-default" %></p>
+			</blockquote>
+		</div>
+	<div class="divider"></div>
+	<hr/>
 </div>
 
 

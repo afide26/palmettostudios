@@ -11,9 +11,17 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-             <li><%= link_to " Welcome", root_path %></li>
-             <li><%= link_to " Services", root_path(@root, :anchor=>"about") %></li>
-             <!-- <li><%= link_to " Clients", "#"%></li> -->
+             <li><%= link_to "Welcome", root_path %></li>
+              <li><%= link_to "The Chief Photographer", root_path(@root, :anchor=> "about") %></li>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><%= link_to "Portrait Session", root_path(@root, :anchor=>"portraits") %></li>
+                 <li><%= link_to "Weddings", root_path(@root, :anchor=>"weddings") %></li>
+                 <li><%= link_to "Corporate Events", root_path(@root, :anchor=>"corporate") %></li>
+                 <li><%= link_to "Product Shoot", root_path(@root, :anchor=>"product") %></li>
+               </ul>
+             </li>
              <li><%= link_to "Photography Tips", posts_path %></li>
 
              <!-- This enables the dropdown to show for admin user -->

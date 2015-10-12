@@ -9,10 +9,18 @@
 		padding-left: 1em;
 	}
 }
+
+#product, #weddings, 
+#corporate, #portraits{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
 .services-block{
 	background-color: #F2F2E4 !important;
 	width: 70%;
-	margin: 0 auto;
+	height: 50%;
+	overflow:hidden;
+	margin: 1em auto;
 	border-radius: 1em;
 	h2{
 
@@ -65,7 +73,7 @@
 }
 .services-block{
 	background-color: #fcf9f2;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	.service-summary h3{
 		text-align:center;
