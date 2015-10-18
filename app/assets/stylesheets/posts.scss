@@ -21,11 +21,15 @@ p.post-body{
 	padding-right:.5em;
 }
 
-img.img-show{
-	border-radius: 1em;
-	float:left;
-	padding-left:.5em;
-	margin:1em auto;
+.post-image>img{
+	margin-left:1em;
+	margin-top: 1em;
+
+}
+
+.col-xs-12>img{
+	width: 100%;
+	
 }
 .post-border {
 	margin-top: 1.5em;
@@ -63,12 +67,6 @@ img.img-show{
 		font-size: 1.25em;
 		padding-left:2em;
 		font-family:Raleway, sans-serif;
-	}
-
-	img.img-show{
-		width:90%;
-		border-radius:1em;
-		margin-right:1.5em;
 	}
 
 	.post-content p{
