@@ -7,7 +7,7 @@
 		<p class="text-right"><%= link_to "Back to Posts", posts_path %> | Posted <%= time_ago_in_words(@post.created_at)%> Ago</p>
 		<hr>
 		<br>
-		<p class="post-content"><%= simple_format(@post.body) %></p>	
+		<p class="post-content"><%= simple_format(@post.body).gsub(URI.regexp, '<a href="\0">\0</a>').html_safe %></p>	
 		<%= link_to '<i class="glyphicon glyphicon-envelope contact"></i> Contact Us'.html_safe, new_contact_path, class:"pull-right btn btn-default btn-xs" %>
 		<br>
 		<br>
