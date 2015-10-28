@@ -26,9 +26,9 @@
 			    <p><%= truncate(post.body, length: 220, separator: '').gsub(URI.regexp, '<a href="\0">\0</a>').html_safe %></p>	
 			    <p><%= link_to "Read Full Post", post_path(post), class:"pull-right btn btn-xs btn-link" %></p>	
 			</div>
-			<div class="col-md-4 col-xs-12 post-image">
+<!-- 			<div class="col-md-4 col-xs-12 post-image">
 				<%= image_tag(post.image.url, class:"pull-right img img-responsive img-rounded") if post.image? %>
-			</div>
+			</div> -->
 		<% end %>	
 	</div>	
 </div>
