@@ -3,8 +3,9 @@
 	<br>
 	<%= render 'layouts/flash' %>
 	<div class="col-md-12 col-xs-12">
-        <h2 class="post-show-header"><%= @post.title %> <span class="pull-right"><%= social_share_button_tag(@post.title) %></span></h2>
-		<p class="text-right"><%= link_to "Back to Posts", posts_path %> | Posted <%= time_ago_in_words(@post.created_at)%> Ago</p>
+        <h2 class="post-show-header"><%= @post.title %></h2>
+       <ul class="shareable"><li><%= facebook_button%></li><li><%= twitter_button%></li><li><%= google_plus_button%></li></ul>
+		<p class="text-right link-post"><%= link_to "Back to Posts", posts_path %> | Posted <%= time_ago_in_words(@post.created_at)%> Ago</p>
 		<hr>
 		<br>
 		<p class="post-content"><%= simple_format(@post.body).gsub(URI.regexp, '<a href="\0">\0</a>').html_safe %></p>	

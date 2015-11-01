@@ -27,9 +27,25 @@ p.post-body{
 
 }
 
+.shareable{
+	margin-left: -40px;
+}
+.link-post{
+	clear:left;
+}
+.shareable li{
+	list-style-type:none;
+	float: left;
+	margin-right: 5px;
+	font-size:.65em;
+}
+
 .col-xs-12>img{
 	width: 100%;
 	
+}
+.col-md-12>p>span>small>ul{
+	list-style-type:none;
 }
 .post-border {
 	margin-top: 1.5em;
