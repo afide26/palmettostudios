@@ -1,33 +1,33 @@
-<%= provide(:title, "All Posts")%>
+<%= provide(:title, 'All Posts')%>
 <%= render 'layouts/flash' %>
-<div class="container">
-	<div class="post-row">
-		<div class="row">
-			<div class="col-md-6">
-					<h1 class="post-header">My Thoughts About <span><i class="fa fa-camera-retro"></i></span></h1>
+<div class='container'>
+	<div class='post-row'>
+		<div class='row'>
+			<div class='col-md-6'>
+					<h1 class='post-header'>My Thoughts About <span><i class='fa fa-camera-retro'></i></span></h1>
 			</div>	
-			<div class="col-md-6">
-				<div class="pull-right">
-					<small><%= will_paginate @collection, renderer: BootstrapPagination::Rails, :previous_label => "&laquo; New Posts", :next_label =>"Old Posts &raquo;" %></small>
+			<div class='col-md-6'>
+				<div class='pull-right'>
+					<small><%= will_paginate @collection, renderer: BootstrapPagination::Rails, :previous_label => '&laquo; New Posts', :next_label =>'Old Posts &raquo;' %></small>
 				</div>
 			</div>
 		</div>			
 		<% if !user_signed_in? %>
 		<% elsif current_user.admin? %>
-		<p><small><%= link_to "New Post", new_post_path, class:"btn btn-default btn-xs" %></small></p>
+		<p><small><%= link_to 'New Post', new_post_path, class:'btn btn-default btn-xs' %></small></p>
 		<% end %>
 	</div>
 	<div class='post-row'>
 		<% @posts.each do |post| %>
-			<div class="col-md-8 col-xs-12">
+			<div class='col-md-8 col-xs-12'>
 				<h2><%= link_to post.title, post_path(post) %></h2><br/>	
-				<p>Created on <%= post.created_at.strftime("%B, %d, %Y") %></p>
+				<p>Created on <%= post.created_at.strftime('%B, %d, %Y') %></p>
 				<hr>
 			    <p><%= truncate(post.body, length: 220, separator: '').gsub(URI.regexp, '<a href="\0">\0</a>').html_safe %></p>	
-			    <p><%= link_to "Read Full Post", post_path(post), class:"pull-right btn btn-xs btn-link" %></p>	
+			    <p><%= link_to 'Read Full Post', post_path(post), class:'pull-right btn btn-xs btn-link' %></p>	
 			</div>
-			<div class="col-md-4 col-xs-12 post-image">
-				<%= image_tag(post.image.url, class:"pull-right img img-responsive img-rounded") if post.image? %>
+			<div class='col-md-4 col-xs-12 post-image'>
+				<%= image_tag(post.image.url, class:'pull-right img img-responsive img-rounded') if post.image? %>
 			</div>
 		<% end %>	
 	</div>	
